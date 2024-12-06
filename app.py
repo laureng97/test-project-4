@@ -1,24 +1,19 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import joblib
-from flask_cors import CORS  # Add CORS support
-import os  # Import os to work with file paths
 
-app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+# Set the current directory as the template folder
+app = Flask(__name__, template_folder=".")
 
 # Load your trained model
-model = joblib.load('linear_model.pkl')
+model = joblib.load("linear_model.pkl")
 
-# Define the path to the current directory
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-
-@app.route('/', methods=['GET'])
+@app.route("/", methods=["GET"])
 def home():
     """Home route to render the form."""
-    return render_template(os.path.join(CURRENT_DIR, 'index.html'), prediction=None, error=None)
+    return render_template("index.html", prediction=None, error=None)
 
-@app.route('/predict', methods=['POST'])
+@app.route("/predict", methods=["POST"])
 def predict():
     """Route to handle predictions."""
     try:
@@ -55,10 +50,11 @@ def predict():
         prediction = model.predict(input_data)[0]
 
         # Render the result
-        return render_template(os.path.join(CURRENT_DIR, 'index.html'), prediction=round(prediction, 2), error=None)
+        return render_template("index.html", prediction=round(prediction, 2), error=None)
     except Exception as e:
         # Handle errors gracefully and show them on the page
-        return render_template(os.path.join(CURRENT_DIR, 'index.html'), prediction=None, error=f"Error: {str(e)}")
+        return render_template("index.html", prediction=None, error=f"Error: {str(e)}")
 
 if __name__ == "__main__":
     app.run(debug=True)
+
