@@ -1,0 +1,122 @@
+--- equipment_df ---
+None
+Null values:
+Unnamed: 0                0
+_id                       0
+index                     0
+name                      0
+equipment_category        0
+gear_category           121
+cost                      0
+weight                   22
+url                       0
+desc                    127
+tool_category           200
+vehicle_category        191
+quantity                227
+weapon_category         194
+weapon_range            194
+category_range          194
+damage                  195
+range                   194
+properties              194
+2h_damage               225
+armor_category          218
+armor_class             218
+str_minimum             218
+stealth_disadvantage    218
+contents                224
+speed                   216
+capacity                222
+throw_range             223
+special                 229
+dtype: int64
+Data types:
+Unnamed: 0                int64
+_id                      object
+index                    object
+name                     object
+equipment_category       object
+gear_category            object
+cost                     object
+weight                  float64
+url                      object
+desc                     object
+tool_category            object
+vehicle_category         object
+quantity                float64
+weapon_category          object
+weapon_range             object
+category_range           object
+damage                   object
+range                    object
+properties               object
+2h_damage                object
+armor_category           object
+armor_class              object
+str_minimum             float64
+stealth_disadvantage     object
+contents                 object
+speed                    object
+capacity                 object
+throw_range              object
+special                  object
+dtype: object
+First 5 rows:
+   Unnamed: 0                       _id                  index  \
+0           0  5f2329a90b1bb138c5940de2                 abacus   
+1           1  5f2329a90b1bb138c5940de3              acid-vial   
+2           2  5f2329a90b1bb138c5940de4  alchemists-fire-flask   
+3           3  5f2329a90b1bb138c5940e51    alchemists-supplies   
+4           4  5f2329a90b1bb138c5940dea                 amulet   
+
+                       name  \
+0                    Abacus   
+1               Acid (vial)   
+2  Alchemist's fire (flask)   
+3      Alchemist's supplies   
+4                    Amulet   
+
+                                  equipment_category  gear_category  \
+0  {'name': 'Adventuring Gear', 'url': '/api/equi...  Standard Gear   
+1  {'name': 'Adventuring Gear', 'url': '/api/equi...  Standard Gear   
+2  {'name': 'Adventuring Gear', 'url': '/api/equi...  Standard Gear   
+3  {'name': 'Tools', 'url': '/api/equipment-categ...            NaN   
+4  {'name': 'Adventuring Gear', 'url': '/api/equi...    Holy Symbol   
+
+                             cost  weight  \
+0   {'quantity': 2, 'unit': 'gp'}     2.0   
+1  {'quantity': 25, 'unit': 'gp'}     1.0   
+2  {'quantity': 50, 'unit': 'gp'}     1.0   
+3  {'quantity': 50, 'unit': 'gp'}     8.0   
+4   {'quantity': 5, 'unit': 'gp'}     1.0   
+
+                                    url  \
+0                 /api/equipment/abacus   
+1              /api/equipment/acid-vial   
+2  /api/equipment/alchemists-fire-flask   
+3    /api/equipment/alchemists-supplies   
+4                 /api/equipment/amulet   
+
+                                                desc  ... 2h_damage  \
+0                                                NaN  ...       NaN   
+1  ['As an action, you can splash the contents of...  ...       NaN   
+2  ['This sticky, adhesive fluid ignites when exp...  ...       NaN   
+3  ["These special tools include the items needed...  ...       NaN   
+4  ['A holy symbol is a representation of a god o...  ...       NaN   
+
+  armor_category  armor_class str_minimum stealth_disadvantage contents speed  \
+0            NaN          NaN         NaN                  NaN      NaN   NaN   
+1            NaN          NaN         NaN                  NaN      NaN   NaN   
+2            NaN          NaN         NaN                  NaN      NaN   NaN   
+3            NaN          NaN         NaN                  NaN      NaN   NaN   
+4            NaN          NaN         NaN                  NaN      NaN   NaN   
+
+  capacity throw_range special  
+0      NaN         NaN     NaN  
+1      NaN         NaN     NaN  
+2      NaN         NaN     NaN  
+3      NaN         NaN     NaN  
+4      NaN         NaN     NaN  
+
+[5 rows x 29 columns]

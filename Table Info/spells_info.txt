@@ -1,0 +1,131 @@
+--- spells_df ---
+None
+Null values:
+Unnamed: 0              0
+_id                     0
+index                   0
+name                    0
+desc                    0
+higher_level          232
+range                   0
+components              0
+material              135
+ritual                  0
+duration                0
+concentration           0
+casting_time            0
+level                   0
+attack_type           299
+damage                250
+school                  0
+classes                 0
+subclasses              0
+url                     0
+dc                    229
+heal_at_slot_level    308
+area_of_effect        232
+dtype: int64
+Data types:
+Unnamed: 0             int64
+_id                   object
+index                 object
+name                  object
+desc                  object
+higher_level          object
+range                 object
+components            object
+material              object
+ritual                  bool
+duration              object
+concentration           bool
+casting_time          object
+level                  int64
+attack_type           object
+damage                object
+school                object
+classes               object
+subclasses            object
+url                   object
+dc                    object
+heal_at_slot_level    object
+area_of_effect        object
+dtype: object
+First 5 rows:
+   Unnamed: 0                       _id        index         name  \
+0           0  5f2329b00b1bb138c594140a   acid-arrow   Acid Arrow   
+1           1  5f2329b00b1bb138c5941409  acid-splash  Acid Splash   
+2           2  5f2329b00b1bb138c594140c          aid          Aid   
+3           3  5f2329b00b1bb138c594140b        alarm        Alarm   
+4           4  5f2329b00b1bb138c594140d   alter-self   Alter Self   
+
+                                                desc  \
+0  ['A shimmering green arrow streaks toward a ta...   
+1  ['You hurl a bubble of acid. Choose one creatu...   
+2  ["Your spell bolsters your allies with toughne...   
+3  ["You set an alarm against unwanted intrusion....   
+4  ['You assume a different form. When you cast t...   
+
+                                        higher_level    range  \
+0  ['When you cast this spell using a spell slot ...  90 feet   
+1                                                NaN  60 feet   
+2  ["When you cast this spell using a spell slot ...  30 feet   
+3                                                NaN  30 feet   
+4                                                NaN     Self   
+
+        components                                       material  ritual  \
+0  ['V', 'S', 'M']  Powdered rhubarb leaf and an adder's stomach.   False   
+1       ['V', 'S']                                            NaN   False   
+2  ['V', 'S', 'M']                   A tiny strip of white cloth.   False   
+3  ['V', 'S', 'M']   A tiny bell and a piece of fine silver wire.    True   
+4       ['V', 'S']                                            NaN   False   
+
+   ... level  attack_type                                             damage  \
+0  ...     2       ranged  {'damage_type': {'name': 'Acid', 'url': '/api/...   
+1  ...     0          NaN  {'damage_type': {'name': 'Acid', 'url': '/api/...   
+2  ...     2          NaN                                                NaN   
+3  ...     1          NaN                                                NaN   
+4  ...     2          NaN                                                NaN   
+
+                                              school  \
+0  {'name': 'Evocation', 'url': '/api/magic-schoo...   
+1  {'name': 'Conjuration', 'url': '/api/magic-sch...   
+2  {'name': 'Abjuration', 'url': '/api/magic-scho...   
+3  {'name': 'Abjuration', 'url': '/api/magic-scho...   
+4  {'name': 'Transmutation', 'url': '/api/magic-s...   
+
+                                             classes  \
+0  [{'name': 'Wizard', 'url': '/api/classes/wizar...   
+1  [{'name': 'Sorcerer', 'url': '/api/classes/sor...   
+2  [{'name': 'Cleric', 'url': '/api/classes/cleri...   
+3  [{'name': 'Ranger', 'url': '/api/classes/range...   
+4  [{'name': 'Sorcerer', 'url': '/api/classes/sor...   
+
+                                          subclasses                      url  \
+0  [{'name': 'Lore', 'url': '/api/subclasses/lore...   /api/spells/acid-arrow   
+1  [{'name': 'Lore', 'url': '/api/subclasses/lore'}]  /api/spells/acid-splash   
+2  [{'name': 'Lore', 'url': '/api/subclasses/lore'}]          /api/spells/aid   
+3  [{'name': 'Lore', 'url': '/api/subclasses/lore'}]        /api/spells/alarm   
+4  [{'name': 'Lore', 'url': '/api/subclasses/lore'}]   /api/spells/alter-self   
+
+                                                  dc  \
+0                                                NaN   
+1  {'dc_type': {'name': 'DEX', 'url': '/api/abili...   
+2                                                NaN   
+3                                                NaN   
+4                                                NaN   
+
+                                  heal_at_slot_level  \
+0                                                NaN   
+1                                                NaN   
+2  {'2': '5', '3': '10', '4': '15', '5': '20', '6...   
+3                                                NaN   
+4                                                NaN   
+
+                 area_of_effect  
+0                           NaN  
+1                           NaN  
+2                           NaN  
+3  {'type': 'cube', 'size': 20}  
+4                           NaN  
+
+[5 rows x 23 columns]

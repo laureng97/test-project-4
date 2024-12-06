@@ -1,0 +1,135 @@
+--- monsters_df ---
+None
+Null values:
+Unnamed: 0                  0
+_id                         0
+index                       0
+name                        0
+size                        0
+type                        0
+subtype                   258
+alignment                   0
+armor_class                 0
+hit_points                  0
+hit_dice                    0
+speed                       0
+strength                    0
+dexterity                   0
+constitution                0
+intelligence                0
+wisdom                      0
+charisma                    0
+proficiencies               0
+damage_vulnerabilities      0
+damage_resistances          0
+damage_immunities           0
+condition_immunities        0
+senses                      0
+languages                 129
+challenge_rating            0
+special_abilities          56
+actions                     2
+legendary_actions         293
+url                         0
+reactions                 311
+other_speeds              318
+dtype: int64
+Data types:
+Unnamed: 0                  int64
+_id                        object
+index                      object
+name                       object
+size                       object
+type                       object
+subtype                    object
+alignment                  object
+armor_class                 int64
+hit_points                  int64
+hit_dice                   object
+speed                      object
+strength                    int64
+dexterity                   int64
+constitution                int64
+intelligence                int64
+wisdom                      int64
+charisma                    int64
+proficiencies              object
+damage_vulnerabilities     object
+damage_resistances         object
+damage_immunities          object
+condition_immunities       object
+senses                     object
+languages                  object
+challenge_rating          float64
+special_abilities          object
+actions                    object
+legendary_actions          object
+url                        object
+reactions                  object
+other_speeds               object
+dtype: object
+First 5 rows:
+   Unnamed: 0                       _id               index  \
+0           0  5f2329ad0b1bb138c59411ee             aboleth   
+1           1  5f2329ad0b1bb138c59411ef             acolyte   
+2           2  5f2329ad0b1bb138c59411f1  adult-black-dragon   
+3           3  5f2329ad0b1bb138c59411f0   adult-blue-dragon   
+4           4  5f2329ad0b1bb138c59411f2  adult-brass-dragon   
+
+                 name    size        type   subtype      alignment  \
+0             Aboleth   Large  aberration       NaN    lawful evil   
+1             Acolyte  Medium    humanoid  any race  any alignment   
+2  Adult Black Dragon    Huge      dragon       NaN   chaotic evil   
+3   Adult Blue Dragon    Huge      dragon       NaN    lawful evil   
+4  Adult Brass Dragon    Huge      dragon       NaN   chaotic good   
+
+   armor_class  hit_points  ... condition_immunities  \
+0           17         135  ...                   []   
+1           10           9  ...                   []   
+2           19         195  ...                   []   
+3           19         225  ...                   []   
+4           18         172  ...                   []   
+
+                                              senses  \
+0  {'darkvision': '120 ft.', 'passive_perception'...   
+1                         {'passive_perception': 12}   
+2  {'blindsight': '60 ft.', 'darkvision': '120 ft...   
+3  {'blindsight': '60 ft.', 'darkvision': '120 ft...   
+4  {'blindsight': '60 ft.', 'darkvision': '120 ft...   
+
+                           languages  challenge_rating  \
+0     Deep Speech, telepathy 120 ft.             10.00   
+1  any one language (usually Common)              0.25   
+2                   Common, Draconic             14.00   
+3                   Common, Draconic             16.00   
+4                   Common, Draconic             13.00   
+
+                                   special_abilities  \
+0  [{'name': 'Amphibious', 'desc': 'The aboleth c...   
+1  [{'name': 'Spellcasting', 'desc': 'The acolyte...   
+2  [{'name': 'Amphibious', 'desc': 'The dragon ca...   
+3  [{'name': 'Legendary Resistance', 'desc': 'If ...   
+4  [{'name': 'Legendary Resistance', 'desc': 'If ...   
+
+                                             actions  \
+0  [{'name': 'Multiattack', 'desc': 'The aboleth ...   
+1  [{'name': 'Club', 'desc': 'Melee Weapon Attack...   
+2  [{'name': 'Multiattack', 'desc': 'The dragon c...   
+3  [{'name': 'Multiattack', 'desc': 'The dragon c...   
+4  [{'name': 'Multiattack', 'desc': 'The dragon c...   
+
+                                   legendary_actions  \
+0  [{'name': 'Detect', 'desc': 'The aboleth makes...   
+1                                                NaN   
+2  [{'name': 'Detect', 'desc': 'The dragon makes ...   
+3  [{'name': 'Detect', 'desc': 'The dragon makes ...   
+4                                                NaN   
+
+                                url reactions other_speeds  
+0             /api/monsters/aboleth       NaN          NaN  
+1             /api/monsters/acolyte       NaN          NaN  
+2  /api/monsters/adult-black-dragon       NaN          NaN  
+3   /api/monsters/adult-blue-dragon       NaN          NaN  
+4  /api/monsters/adult-brass-dragon       NaN          NaN  
+
+[5 rows x 32 columns]

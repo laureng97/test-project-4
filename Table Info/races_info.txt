@@ -1,0 +1,144 @@
+--- races_df ---
+None
+Null values:
+Unnamed: 0                      0
+_id                             0
+index                           0
+name                            0
+speed                           0
+ability_bonuses                 0
+alignment                       0
+age                             0
+size                            0
+size_description                0
+starting_proficiencies          0
+languages                       0
+language_desc                   0
+traits                          0
+trait_options                   8
+subraces                        0
+url                             0
+starting_proficiency_options    8
+ability_bonus_options           8
+language_options                7
+dtype: int64
+Data types:
+Unnamed: 0                       int64
+_id                             object
+index                           object
+name                            object
+speed                            int64
+ability_bonuses                 object
+alignment                       object
+age                             object
+size                            object
+size_description                object
+starting_proficiencies          object
+languages                       object
+language_desc                   object
+traits                          object
+trait_options                   object
+subraces                        object
+url                             object
+starting_proficiency_options    object
+ability_bonus_options           object
+language_options                object
+dtype: object
+First 5 rows:
+   Unnamed: 0                       _id       index        name  speed  \
+0           0  5f2329af0b1bb138c59413c3  dragonborn  Dragonborn     30   
+1           1  5f2329af0b1bb138c59413c0       dwarf       Dwarf     30   
+2           2  5f2329af0b1bb138c59413bf         elf         Elf     30   
+3           3  5f2329af0b1bb138c59413c4       gnome       Gnome     25   
+4           4  5f2329af0b1bb138c59413c5    half-elf    Half-Elf     30   
+
+                                     ability_bonuses  \
+0  [{'name': 'STR', 'url': '/api/ability-scores/s...   
+1  [{'name': 'CON', 'url': '/api/ability-scores/c...   
+2  [{'name': 'DEX', 'url': '/api/ability-scores/d...   
+3  [{'name': 'INT', 'url': '/api/ability-scores/i...   
+4  [{'name': 'CHA', 'url': '/api/ability-scores/c...   
+
+                                           alignment  \
+0   Dragonborn tend to extremes, making a conscio...   
+1  Most dwarves are lawful, believing firmly in t...   
+2  Elves love freedom, variety, and self-expressi...   
+3  Gnomes are most often good. Those who tend tow...   
+4  Half-elves share the chaotic bent of their elv...   
+
+                                                 age    size  \
+0  Young dragonborn grow quickly. They walk hours...  Medium   
+1  Dwarves mature at the same rate as humans, but...  Medium   
+2  Although elves reach physical maturity at abou...  Medium   
+3   Gnomes mature at the same rate humans do, and...   Small   
+4  Half-elves mature at the same rate humans do a...  Medium   
+
+                                    size_description  \
+0  Dragonborn are taller and heavier than humans,...   
+1  Dwarves stand between 4 and 5 feet tall and av...   
+2  Elves range from under 5 to over 6 feet tall a...   
+3  Gnomes are between 3 and 4 feet tall and avera...   
+4  Half-elves are about the same size as humans, ...   
+
+                              starting_proficiencies  \
+0                                                 []   
+1  [{'url': '/api/proficiencies/battleaxes', 'nam...   
+2  [{'url': '/api/proficiencies/skill-perception'...   
+3                                                 []   
+4                                                 []   
+
+                                           languages  \
+0  [{'url': '/api/languages/common', 'name': 'Com...   
+1  [{'url': '/api/languages/common', 'name': 'Com...   
+2  [{'url': '/api/languages/common', 'name': 'Com...   
+3  [{'url': '/api/languages/common', 'name': 'Com...   
+4  [{'name': 'Common', 'url': '/api/languages/com...   
+
+                                       language_desc  \
+0  You can speak, read, and write Common and Drac...   
+1  You can speak, read, and write Common and Dwar...   
+2  You can speak, read, and write Common and Elvi...   
+3  You can speak, read, and write Common and Gnom...   
+4  You can speak, read, and write Common, Elvish,...   
+
+                                              traits  \
+0  [{'name': 'Draconic Ancestry', 'url': '/api/tr...   
+1  [{'name': 'Darkvision', 'url': '/api/traits/da...   
+2  [{'name': 'Darkvision', 'url': '/api/traits/da...   
+3  [{'name': 'Darkvision', 'url': '/api/traits/da...   
+4  [{'name': 'Darkvision', 'url': '/api/traits/da...   
+
+                                       trait_options  \
+0  {'choose': 1, 'from': [{'name': 'Breath Weapon...   
+1                                                NaN   
+2                                                NaN   
+3                                                NaN   
+4                                                NaN   
+
+                                            subraces                    url  \
+0                                                 []  /api/races/dragonborn   
+1  [{'url': '/api/subraces/hill-dwarf', 'name': '...       /api/races/dwarf   
+2  [{'url': '/api/subraces/high-elf', 'name': 'Hi...         /api/races/elf   
+3  [{'url': '/api/subraces/rock-gnome', 'name': '...       /api/races/gnome   
+4                                                 []    /api/races/half-elf   
+
+                        starting_proficiency_options  \
+0                                                NaN   
+1  {'choose': 1, 'type': 'proficiencies', 'from':...   
+2                                                NaN   
+3                                                NaN   
+4                                                NaN   
+
+                               ability_bonus_options  \
+0                                                NaN   
+1                                                NaN   
+2                                                NaN   
+3                                                NaN   
+4  {'choose': 2, 'type': 'ability_bonuses', 'from...   
+
+                                    language_options  
+0                                                NaN  
+1                                                NaN  
+2                                                NaN  
+3                                                NaN  
+4  {'choose': 1, 'type': 'languages', 'from': [{'...  
