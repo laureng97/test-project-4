@@ -1,11 +1,10 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import joblib
+from flask_cors import CORS  # Add CORS support
 
 app = Flask(__name__)
-
-# Disable caching for development
-app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+CORS(app)  # Enable CORS for all routes
 
 # Load your trained model
 model = joblib.load('linear_model.pkl')
@@ -13,7 +12,7 @@ model = joblib.load('linear_model.pkl')
 @app.route('/', methods=['GET'])
 def home():
     """Home route to render the form."""
-    return render_template('index.html', prediction=None, error=None, template_folder='.')
+    return render_template('index.html', prediction=None, error=None)
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -52,10 +51,11 @@ def predict():
         prediction = model.predict(input_data)[0]
 
         # Render the result
-        return render_template('./index.html', prediction=round(prediction, 2), error=None)
+        return render_template('index.html', prediction=round(prediction, 2), error=None)
     except Exception as e:
         # Handle errors gracefully and show them on the page
-        return render_template('./index.html', prediction=None, error=f"Error: {str(e)}")
+        return render_template('index.html', prediction=None, error=f"Error: {str(e)}")
 
 if __name__ == "__main__":
     app.run(debug=True)
+
